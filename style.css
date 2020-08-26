@@ -279,7 +279,6 @@ li{
   font-weight: normal;
   font-style: normal;
   text-decoration: inherit;
-  content: "\f041";
 }
 
 /***** fine-tunes on the lists... *****/
@@ -366,4 +365,30 @@ li{
   font-family: "Source Code Pro";
   font-weight: 400;
   font-style: normal;
+}
+
+/* make links functional for web,
+ * but not distracting for print
+ */
+ a[href]{
+  text-decoration: none;
+  color: #444;
+}
+a[href]:hover{
+  text-decoration: underline;
+}
+
+/* make web version resemble printable page
+ */
+body{
+  background-color: grey;
+}
+body > *{
+  background-color: white;
+}
+#main{
+  height: var(--page-height);
+}
+#sidebar{
+  height: var(--page-height);
 }
