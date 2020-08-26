@@ -9,8 +9,8 @@
 
 :root{
   --page-width: 8.5in;
-  --page-height: 11in;
-  --main-width: 6.4in;
+  --page-height: 12.0in;
+  --main-width: 6.2in;
   --sidebar-width: calc(var(--page-width) - var(--main-width));
   --decorator-horizontal-margin: 0.2in;
 
@@ -45,6 +45,10 @@ h1, h2, h3{
   color: #000;
 }
 
+h6{
+  margin-top: 5px;
+}
+
 li{
   list-style-type: none;
 }
@@ -52,8 +56,8 @@ li{
 #main{
   float: left;
   width: var(--main-width);
-  padding: 0.25in 0.25in 0 0.25in;
-  font-size: 7pt;
+  padding: 0.5in 0.25in 0 0.25in;
+  font-size: 9.5pt;
 }
 
 #sidebar{
@@ -92,7 +96,7 @@ li{
 }
 
 .subtitle{
-  font-size: 8pt;
+  font-size: 9.5pt;
 }
 
 /*** categorial blocks ***/
@@ -240,7 +244,7 @@ li{
 }
 
 .details h3{
-  font-size: 9pt;
+  font-size: 10pt;
 }
 
 .main-block:not(.concise) .details div{
@@ -259,7 +263,7 @@ li{
 
 .details .place{
   float: left;
-  font-size: 7.5pt;
+  font-size: 9pt;
 }
 
 .details .location{
@@ -268,6 +272,7 @@ li{
 
 .details div{
   clear: both;
+  padding-top: 0.5px;
 }
 
 .details .location::before{
@@ -347,6 +352,17 @@ li{
 #skills ul{
   margin: 0.05in 0 0.15in;
   padding: 0;
+  font-size: 9.5pt;
+}
+
+#interests{
+  line-height: 1.5;
+}
+
+#interests ul{
+  margin: 0.05in 0 0.15in;
+  padding: 0;
+  font-size: 9.5pt;
 }
 
 #disclaimer{
